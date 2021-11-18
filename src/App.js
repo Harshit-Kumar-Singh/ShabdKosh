@@ -7,11 +7,14 @@ import "./components/Content/Content.css";
 import axios from "axios";
 
 let BackendLink = "";
+
 if (process.env.ISHEROKU) {
   BackendLink = process.env.BACKENDLINK;
 } else {
   BackendLink = "http://localhost:5000";
 }
+
+console.log(`[${process.env.ISHEROKU}][${process.env.BACKENDLINK}]`);
 
 function getBackendPath(path) {
   return BackendLink + path;
