@@ -55,7 +55,7 @@ function App() {
           }`
         );
         console.log(data.data);
-        let response = await fetch("http://localhost:5000/", {
+        let response = await fetch(getBackendPath("/"), {
           method: "POST",
           body: JSON.stringify(data.data),
         });
