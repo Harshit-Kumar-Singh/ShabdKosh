@@ -8,11 +8,9 @@ import axios from "axios";
 
 let BackendLink = "";
 
-if (process.env.REACT_APP_ISHEROKU) {
-  BackendLink = process.env.REACT_APP_BACKENDLINK;
-} else {
-  BackendLink = "http://localhost:5000";
-}
+BackendLink = "https://shabdkosh-backend.herokuapp.com";
+
+// BackendLink = "http://localhost:5000";
 
 console.log(`[${process.env.ISHEROKU}][${process.env.BACKENDLINK}]`);
 
