@@ -8,8 +8,8 @@ import axios from "axios";
 
 let BackendLink = "";
 
-if (process.env.ISHEROKU) {
-  BackendLink = process.env.BACKENDLINK;
+if (process.env.REACT_APP_ISHEROKU) {
+  BackendLink = process.env.REACT_APP_BACKENDLINK;
 } else {
   BackendLink = "http://localhost:5000";
 }
