@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Roboto+Condensed&display=swap');
+.heading{
+    font-size: 100px;
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    /* font-family: 'Roboto Condensed', sans-serif;    */
+    display: flex;
+    justify-content: center;
+    text-transform:uppercase;
+
+}
+.input_area{
+   display: flex;
+    justify-content: space-between;
+    
+}
+
+.word{
+    width: 35%;
+    /* border: solid 2px red; */
+}
+.countries{
+    /* border: solid 2px black; */
+     width: 45%;
+}
+
+
+#select{
+    /* border: solid 2px white; */
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+option{
+    padding: 30px;
+}
+.countries select{
+ background-color: #95B2B8;
+  color: white;
+  padding: 12px;
+  width: 250px;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+.countries select .options:hover{
+    color: #000;
+}
+.word{
+    
+    background-color: #95B2B8;
+    color: white;
+    /* padding: 12px; */
+    width: 35%;
+    /* border: none; */
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    border-radius: 5px;
+
+}
+.input_word{
+    background-color: #95B2B8;
+    color: white;
+    /* padding: 12px; */
+    width: 100%;
+    height: 100%;
+    /* border: none; */
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+    border-radius: 5px;
+}
+::placeholder{
+    color: white;
+}
+@media (max-width:551px) {
+    .heading{
+        font-size: 50px;
+    }
+    .word{
+        width: 40%;
+    }
+    .countries{
+        width: 50%;
+    }
+}
+@media (max-width:701px) {
+    .heading{
+        font-size: 70px;
+    }
+    .word{
+        width: 40%;
+    }
+    .countries{
+        width: 50%;
+    }
+}
+@media (max-width:360px) {
+    .heading{
+        font-size: 40px;
+    }
+}
